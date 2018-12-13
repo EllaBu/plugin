@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="./layer.css">
+</head>
+<body>
+  <button>xianshi</button>
+    <!-- <div class="layer-self">
+      <div class="layer-box">
+        <div class="title">
+          <span>提示</span>
+          <a href="javascript:;">X</a>
+        </div>
+        <div class="content">确定提交信息？</div>
+        <div class="footer">
+          <a class="layer-btn0" href="javascript:;">确定</a>
+          <a href="javascript:;">取消</a>
+        </div>
+      </div>
+    </div> -->
+    <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./layer.js"></script>
+    <script>
+      $(function () {
+        $('button').click(function () {
+          $.openLayer({
+            content: 'haha',
+            btns: ['确定1', '取消1']
+          });
+        })
+      })
+    </script>
+</body>
+</html>

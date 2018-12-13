@@ -1,0 +1,73 @@
+*{padding: 0; margin: 0;}
+html{
+    height: 100%;
+}
+body{
+    font-size: 16px; font-family: "Microsoft Yahei";  height: 100%;
+}
+h1,h2,h3{
+    font-weight: lighter;
+}
+a{
+    text-decoration: none;
+}
+#selfWinsow{
+    width: 80%; margin: 0 5%; background: #fff; position: fixed;top: 35%;border: 1px solid #ccc; padding: 0 2% 2% 2%;
+}
+#slefClose{
+    width: 25px; height: 25px; position: absolute;right: 1rem; top: 0.4rem; z-index: 9999; cursor: pointer;
+}
+#slefClose::after{
+    position: absolute;  width: 30px; height: 30px; content: "×"; font-size: 2.5rem; line-height: 30px;
+}
+#selfWinsow h2{
+    font-size: 1rem; border-bottom: 1px solid #ccc; line-height: 100%; padding:1rem 0;
+}
+#selInfo{
+    font-size: 0.95rem; line-height: 2.1rem; padding: 0.5rem;
+}
+#selfBtBox{
+    padding: 1rem; margin: 0px auto; border: 1px solid #ccc; overflow: hidden;
+}
+.selfBt{
+    padding: 0.8rem 2%;background: #323434; color: #fff; float: left; line-height: 100%; text-align: center; cursor: pointer;
+}
+.selfBtDouble{
+    width: 46%;
+}
+.selfBtSingle{
+    color: #fff; width: 100%; padding: 0.8rem 0;
+}
+#selfOk{
+    background: #323434;
+}
+.selftalkNo{
+    float: left;position: relative;
+    top: -5px;
+    padding: 4px 10px;
+    display: inline-block;
+    margin-left: 5px;
+    color: #000
+}
+.selftalkOk{
+    float: right;
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 4px 10px;
+    color: #fff
+}
+#selfNo,#linkTo2{
+    background: #eeeeee; color: #555555
+}
+#selfBack{
+    width: 100%; background: rgba(0,0,0,.6);
+}
+#selfInput{
+    display: block;
+    width: 100%; padding: 0.5rem 0; border: 1px solid #eee; border-radius: 3px; margin-bottom: 1rem; text-indent: 0.6rem
+}
+#selfInput:focus{
+    border: 1px solid #087690;
+}

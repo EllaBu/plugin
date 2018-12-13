@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="layer.css">
+
+</head>
+<body>
+<input id="me" type="text" name="name" value="">
+<input id="mee" type="button" value="你大爷的">
+
+<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="layer.js"></script>
+<script>
+    window.onload = function(){
+
+        document.getElementById('mee').onclick = function(){
+
+            var win = new SelfWinsow({
+                types : "confirm",
+                callback:function(){
+                    var name = $("#me").val();
+                    $.ajax({
+                        url: "phpinfo.php",
+                        data: {name:name},
+                        success: function(data){
+                            if(data=="1"){
+                                var rrt = new SelfWinsow("知道了，谢谢哈美女")
+                            }else{
+                                var rrt = new SelfWinsow({
+                                    selfInfo:"我们是很得体很很得体的",
+                                    types:"confirm",
+                                    callback:function(){
+                                        $("#mee").val("好吧，我输了，我服了你了");
+                                    }
+                                })
+                            }
+                        }
+                    });
+                }
+
+            });
+
+
+        }
+
+    }
+</script>
+</body>
+</html>
